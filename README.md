@@ -10,10 +10,12 @@ The VoiceOver rotor offers enhanced navigation options. To define containers for
 
 ```sh
 npm install react-native-a11y-container
+cd ios && pod install && cd ..
 ```
 or
 ```sh
 yarn add react-native-a11y-container
+cd ios && pod install && cd ..
 ```
 
 ## Usage
@@ -39,6 +41,9 @@ To specify the type of content within A11yContainerView, use the type attribute 
 
 By default, A11yContainerView uses the SemanticGroup type. For more details on these types, refer to the developer.apple.com documentation.
 
+
+## Platforms
+This library is designed for implementing UIAccessibilityContainer logic in React Native. While UIAccessibilityContainer is specific to iOS, there are no equivalent components for other platforms. For non-iOS platforms, a basic View is used.
 
 ## Contributing
 

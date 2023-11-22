@@ -7,7 +7,9 @@ export default function App() {
   return (
     <View style={styles.container}>
       <A11yContainerView accessibilityLabel="VoiceOver Rotor info">
-        <Text accessibilityRole="header">Use the VoiceOver rotor</Text>
+        <Text style={styles.header} accessibilityRole="header">
+          Use the VoiceOver rotor
+        </Text>
         <Text>
           First, if you haven't turned on VoiceOver, turn it on in Settings &gt;
           Accessibility.
@@ -24,7 +26,7 @@ export default function App() {
         </Text>
       </A11yContainerView>
       <A11yContainerView>
-        <Text accessibilityRole="header">
+        <Text style={styles.header} accessibilityRole="header">
           Move through the organization of a page or screen
         </Text>
         <Text>
@@ -41,10 +43,9 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+    padding: 30,
   },
-  box: {
-    width: 60,
-    height: 60,
-    marginVertical: 20,
+  header: {
+    fontWeight: '600',
   },
 });
