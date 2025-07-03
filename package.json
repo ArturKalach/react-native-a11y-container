@@ -166,6 +166,11 @@
   "codegenConfig": {
     "name": "RNA11yContainerViewSpec",
     "type": "components",
-    "jsSrcsDir": "src"
+    "jsSrcsDir": "src",
+    "ios": {
+      "componentProvider": {
+        "A11yContainerView": "A11yContainerView"
+      }
+    }
   }
 }
