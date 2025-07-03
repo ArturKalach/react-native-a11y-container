@@ -1,6 +1,6 @@
 {
   "name": "react-native-a11y-container",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "UIAccessibilityContainer component for ReactNative",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -166,6 +166,11 @@
   "codegenConfig": {
     "name": "RNA11yContainerViewSpec",
     "type": "components",
-    "jsSrcsDir": "src"
+    "jsSrcsDir": "src",
+    "ios": {
+      "componentProvider": {
+        "A11yContainerView": "A11yContainerView"
+      }
+    }
   }
 }
