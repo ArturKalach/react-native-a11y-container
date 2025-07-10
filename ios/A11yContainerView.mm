@@ -14,9 +14,7 @@ using namespace facebook::react;
 
 @end
 
-@implementation A11yContainerView {
-    UIView * _view;
-}
+@implementation A11yContainerView
 
 + (ComponentDescriptorProvider)componentDescriptorProvider
 {
@@ -28,10 +26,6 @@ using namespace facebook::react;
   if (self = [super initWithFrame:frame]) {
     static const auto defaultProps = std::make_shared<const A11yContainerViewProps>();
     _props = defaultProps;
-
-    _view = [[UIView alloc] init];
-
-    self.contentView = _view;
   }
 
   return self;
@@ -42,7 +36,7 @@ using namespace facebook::react;
     const auto &oldViewProps = *std::static_pointer_cast<A11yContainerViewProps const>(_props);
     const auto &newViewProps = *std::static_pointer_cast<A11yContainerViewProps const>(props);
 
-    
+
     if (oldViewProps.type != newViewProps.type) {
         NSInteger containerType = newViewProps.type;
         self.accessibilityContainerType = (UIAccessibilityContainerType)containerType;
