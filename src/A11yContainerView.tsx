@@ -1,6 +1,5 @@
 import React from 'react';
-import { View, Platform } from 'react-native';
-import type { ViewProps } from 'react-native';
+import { View, Platform, type ViewProps } from 'react-native';
 
 import { default as A11yContainerViewNative } from './A11yContainerViewNativeComponent';
 
@@ -18,10 +17,15 @@ export interface A11yContainerProps extends ViewProps {
   type?: A11yContainerTypeKeys;
 }
 
-export const A11yContainerView = React.memo<A11yContainerProps>(
-  ({ type = 'SemanticGroup', ...props }) => {
+const A11yContainerComponent = React.forwardRef<View, A11yContainerProps>(
+  ({ type = 'SemanticGroup', ...props }, ref) => {
     const containerType = A11yContainerTypes[type];
-    if (Platform.OS !== 'ios') return <View {...props} />;
-    return <A11yContainerViewNative type={containerType} {...props} />;
+    if (Platform.OS !== 'ios') return <View ref={ref} {...props} />;
+
+    return (
+      <A11yContainerViewNative ref={ref} type={containerType} {...props} />
+    );
   }
 );
+
+export const A11yContainerView = React.memo(A11yContainerComponent);
