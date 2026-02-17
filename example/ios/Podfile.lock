@@ -932,7 +932,7 @@ PODS:
   - React-jsinspector (0.72.7)
   - React-logger (0.72.7):
     - glog
-  - react-native-a11y-container (0.2.3-rc):
+  - react-native-a11y-container (0.2.3):
     - hermes-engine
     - RCT-Folly (= 2021.07.22.00)
     - RCTRequired
@@ -1291,7 +1291,7 @@ SPEC CHECKSUMS:
   React-jsiexecutor: 00fdf7bd0e99ab878109ce1b51cb6212d76683e4
   React-jsinspector: 8baadae51f01d867c3921213a25ab78ab4fbcd91
   React-logger: 61efd44da84482aabbbbb478a49b893c7c912f99
-  react-native-a11y-container: 6a109255c00ce9da5ee8a274bfbb9c7a0b64bae4
+  react-native-a11y-container: 607ff2bbd20574b3339b7ca841b29dcebddf2a69
   React-NativeModulesApple: 2f7a355e9b4c83b9509bf6dd798dc5f63ab8bc7d
   React-perflogger: 31ea61077185eb1428baf60c0db6e2886f141a5a
   React-RCTActionSheet: 392090a3abc8992eb269ef0eaa561750588fc39d
