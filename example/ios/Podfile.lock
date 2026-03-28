@@ -1892,7 +1892,7 @@ PODS:
     - React-RCTFBReactNativeSpec
     - ReactCommon/turbomodule/core
     - SocketRocket
-  - react-native-a11y-container (0.2.3):
+  - react-native-a11y-container (0.3.0):
     - boost
     - DoubleConversion
     - fast_float
@@ -2769,7 +2769,7 @@ SPEC CHECKSUMS:
   React-logger: 9e597cbeda7b8cc8aa8fb93860dade97190f69cc
   React-Mapbuffer: 20046c0447efaa7aace0b76085aa9bb35b0e8105
   React-microtasksnativemodule: 0e837de56519c92d8a2e3097717df9497feb33cb
-  react-native-a11y-container: b06bf962924a2fa5ae4d9e8393c6da36b6e81a50
+  react-native-a11y-container: d072536d1a6a8daac211c141725b0c0ee16d097d
   React-NativeModulesApple: 1a378198515f8e825c5931a7613e98da69320cee
   React-networking: bfd1695ada5a57023006ce05823ac5391c3ce072
   React-oscompat: aedc0afbded67280de6bb6bfac8cfde0389e2b33
